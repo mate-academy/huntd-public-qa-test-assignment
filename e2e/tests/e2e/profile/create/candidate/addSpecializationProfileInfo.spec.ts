@@ -13,9 +13,8 @@ test.beforeEach(async ({
   newUser,
   gqlClientInBrowserContext,
   specializations,
-                         technologies,
+  technologies,
 }) => {
-
   await gqlClientInBrowserContext.auth.signUpUser(
     newUser.email,
     newUser.password,
