@@ -1,19 +1,19 @@
 import { test as base } from '@playwright/test';
 import { Logger } from '@/common/logger/Logger';
 import { ApiClientPlaywright } from "@/api/ApiClientPlaywright";
-import { AuthGqlAPI } from "@/api/graphql/AuthGqlAPI";
 import { request as requestContext } from '@playwright/test';
+import { GqlClient } from "@/api/graphql/GqlClient";
 
 export const test = base.extend<{
   addAllureTestHierarchy: string;
-  apiClientInBrowserContext: ApiClientPlaywright;
-  apiClientInRequestContext: ApiClientPlaywright;
-  authGqlClientInBrowserContext: AuthGqlAPI;
-  authGqlClientInRequestContext: AuthGqlAPI;
+  httpClientInBrowserContext: ApiClientPlaywright;
+  httpClientInRequestContext: ApiClientPlaywright;
+  gqlClientInBrowserContext: GqlClient;
+  gqlClientInRequestContext: GqlClient;
 }, {
   logger: Logger;
   }>({
-  apiClientInBrowserContext: async ({ page, logger }, use) => {
+  httpClientInBrowserContext: async ({ page, logger }, use) => {
     const apiClient = new ApiClientPlaywright({
       logger,
       request: page.request,
@@ -21,7 +21,7 @@ export const test = base.extend<{
 
     await use(apiClient);
   },
-  apiClientInRequestContext: async ({ request, logger }, use) => {
+  httpClientInRequestContext: async ({ request, logger }, use) => {
     const apiRequest = await requestContext.newContext();
 
     const apiClient = new ApiClientPlaywright({
@@ -31,14 +31,14 @@ export const test = base.extend<{
 
     await use(apiClient);
   },
-  authGqlClientInBrowserContext: async ({ apiClientInBrowserContext }, use) => {
-    const authGqlAPI = new AuthGqlAPI(apiClientInBrowserContext);
+  gqlClientInBrowserContext: async ({ httpClientInBrowserContext }, use) => {
+    const client = new GqlClient(httpClientInBrowserContext)
 
-    await use(authGqlAPI);
+    await use(client);
   },
-  authGqlClientInRequestContext: async ({ apiClientInRequestContext }, use) => {
-    const authGqlAPI = new AuthGqlAPI(apiClientInRequestContext);
+  gqlClientInRequestContext: async ({ httpClientInRequestContext }, use) => {
+    const client = new GqlClient(httpClientInRequestContext);
 
-    await use(authGqlAPI);
+    await use(client);
   },
 });

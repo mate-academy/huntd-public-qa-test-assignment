@@ -1,8 +1,8 @@
 import { signUpPayload } from '@/api/graphql/payloads/signUP';
-import { GqlApiClient } from '@/api/graphql/GqlApiClient';
+import { BaseGqlApi } from '@/api/graphql/BaseGqlApi';
 import { test } from '@tests/_fixtures/fixtures';
 
-export class AuthGqlAPI extends GqlApiClient {
+export class AuthGqlAPI extends BaseGqlApi {
   async signUpUser(
     email: string,
     password: string,

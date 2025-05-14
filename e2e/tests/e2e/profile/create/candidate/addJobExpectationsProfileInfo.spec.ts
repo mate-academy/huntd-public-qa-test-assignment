@@ -8,10 +8,10 @@ let pages: CandidatePages;
 test.beforeEach(async ({
   page,
   newUser,
-  authGqlClientInBrowserContext,
+  gqlClientInBrowserContext,
 }) => {
 
-  await authGqlClientInBrowserContext.signUpUser(
+  await gqlClientInBrowserContext.auth.signUpUser(
     newUser.email,
     newUser.password,
     newUser.password,

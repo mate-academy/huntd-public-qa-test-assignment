@@ -8,10 +8,10 @@ let recruiterPages: RecruiterPages;
 test.beforeEach(async ({
   page,
   newUser,
-  authGqlClientInRequestContext,
+  gqlClientInRequestContext,
 }) => {
 
-  await authGqlClientInRequestContext.signUpUser(
+  await gqlClientInRequestContext.auth.signUpUser(
     newUser.email,
     newUser.password,
     newUser.password,

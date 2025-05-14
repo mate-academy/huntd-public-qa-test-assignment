@@ -8,7 +8,7 @@ export interface PostGQLRequestOptions {
   headers?: Record<string, string>;
 }
 
-export class GqlApiClient {
+export abstract class BaseGqlApi {
   client: ApiClientBase;
 
   constructor(client: ApiClientBase) {
