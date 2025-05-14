@@ -10,7 +10,6 @@ export abstract class BasePage {
     this.page = page;
   }
 
-
   async assertOpened(
     url?: string | RegExp,
     parameters?: Record<string, string>,
@@ -74,5 +73,11 @@ export abstract class BasePage {
     return newUrl
       .slice(0, -1)
       .replace(',', '');
+  }
+
+  async pressKeyboardEnter(delay = 0): Promise<void> {
+    await test.step(`Press [Enter]`, async () => {
+      await this.page.keyboard.press('Enter', { delay });
+    });
   }
 }

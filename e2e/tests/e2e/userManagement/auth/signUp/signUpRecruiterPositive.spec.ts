@@ -23,8 +23,8 @@ test('should allow to sign up new recruiter user from landing', async ({
   await publicPages.signUp.fillRepeatPasswordField(newUser.password);
   await publicPages.signUp.clickCreateAccountButton();
 
-  await recruiterPages.chooseProfilePage.assertOpened();
-  await recruiterPages.chooseProfilePage.clickRecruiterLink();
+  await recruiterPages.chooseProfile.assertOpened();
+  await recruiterPages.chooseProfile.clickRecruiterLink();
 
-  await recruiterPages.editProfilePage.assertOpened();
+  await recruiterPages.editProfile.assertOpened();
 });

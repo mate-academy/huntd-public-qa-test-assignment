@@ -3,9 +3,9 @@ import { PrivatePages } from "@/ui/composite/PrivatePages";
 import { RecruiterEditProfilePage } from "@/ui/pages/recruiterPages/RecruiterEditProfilePage";
 
 export class RecruiterPages extends PrivatePages {
-  public editProfilePage: RecruiterEditProfilePage;
+  public editProfile: RecruiterEditProfilePage;
   constructor(page: Page) {
     super(page);
-    this.editProfilePage = new RecruiterEditProfilePage(page);
+    this.editProfile = new RecruiterEditProfilePage(page);
   }
 }

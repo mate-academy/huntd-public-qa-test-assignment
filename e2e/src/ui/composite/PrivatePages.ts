@@ -2,8 +2,8 @@ import { Page } from "@playwright/test";
 import { ChooseProfilePage } from "@/ui/pages/ChooseProfilePage";
 
 export class PrivatePages {
-  public chooseProfilePage: ChooseProfilePage;
+  public chooseProfile: ChooseProfilePage;
   constructor(page: Page) {
-    this.chooseProfilePage = new ChooseProfilePage(page);
+    this.chooseProfile = new ChooseProfilePage(page);
   }
 }

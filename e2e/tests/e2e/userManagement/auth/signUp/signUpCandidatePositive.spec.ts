@@ -25,9 +25,9 @@ test('should allow to sign up new candidate user from landing', async ({
   await publicPages.signUp.fillRepeatPasswordField(newUser.password);
   await publicPages.signUp.clickCreateAccountButton();
 
-  await candidatePages.chooseProfilePage.assertOpened();
-  await candidatePages.chooseProfilePage.clickCandidateLink();
+  await candidatePages.chooseProfile.assertOpened();
+  await candidatePages.chooseProfile.clickCandidateLink();
 
-  await candidatePages.editProfilePage.assertOpened();
+  await candidatePages.editSpecialization.assertOpened();
 });
 

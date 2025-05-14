@@ -1,5 +1,6 @@
 export const ROUTES = {
-  candidateEditProfile: '/profile/candidate',
+  candidateEditSpecialization: '/profile/candidate',
+  candidateEditJobExpectations: '/profile/candidate/job-expectations',
   chooseProfile: '/choose-profile',
   landing: '/',
   recruiterEditProfile: '/profile/recruiter',

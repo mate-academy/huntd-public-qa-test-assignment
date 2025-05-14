@@ -21,7 +21,7 @@ test.beforeEach(async ({
   candidatePages = new CandidatePages(page);
 });
 
-test.only('should allow to sign in existing user from landing and choose candidate profile', async ({
+test('should allow to sign in existing user from landing and choose candidate profile', async ({
   newUser,
 }) => {
   await publicPages.landing.visit();
@@ -33,8 +33,8 @@ test.only('should allow to sign in existing user from landing and choose candida
   await publicPages.signIn.fillPasswordField(newUser.password);
   await publicPages.signIn.clickSignInButton();
 
-  await candidatePages.chooseProfilePage.assertOpened();
-  await candidatePages.chooseProfilePage.clickCandidateLink();
+  await candidatePages.chooseProfile.assertOpened();
+  await candidatePages.chooseProfile.clickCandidateLink();
 
-  await candidatePages.editProfilePage.assertOpened();
+  await candidatePages.editSpecialization.assertOpened();
 });
