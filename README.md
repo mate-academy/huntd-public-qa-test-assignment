@@ -1,8 +1,8 @@
-# Huntd Public
+# Huntd public
 
 Anonymous job search in IT(public version).
 
-## Setup Environment
+## Setup environment
 
 1. Setup environment as described in the [doc](./Setup.md)
 
