@@ -28,7 +28,7 @@ test.beforeEach(async ({
   pages = new CandidatePages(page);
 });
 
-test.only('should allow candidate to save speciality in profile', async ({}) => {
+test('should allow candidate to save speciality in profile', async ({}) => {
   await pages.editSpecialization.visit();
 
   await pages.editSpecialization.form.fillPosition(juniorQa);
