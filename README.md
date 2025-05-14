@@ -2,7 +2,7 @@
 
 Anonymous job search in IT(public version).
 
-## Setup environment
+## Setup Environment
 
 1. Setup environment as described in the [doc](./Setup.md)
 
