@@ -1,4 +1,4 @@
-# Huntd public
+# Huntd Public
 
 Anonymous job search in IT(public version).
 
