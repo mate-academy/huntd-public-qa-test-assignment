@@ -20,7 +20,7 @@ export const test = base.extend<{
   },
   // @ts-ignore
   technologies: async ({ gqlClientInBrowserContext }, use) => {
-    const response = await gqlClientInBrowserContext.profile.getTechnologies('js');
+    const response = await gqlClientInBrowserContext.profile.getTechnologies('A');
 
     let names: string[] = new Array();
     let ids = {};
