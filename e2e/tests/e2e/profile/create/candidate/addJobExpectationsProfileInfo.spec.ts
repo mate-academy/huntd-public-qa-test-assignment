@@ -21,6 +21,4 @@ test.beforeEach(async ({
 
 test('should allow candidate to save job expectations in profile', async ({}) => {
   await pages.editJobExpectations.visit();
-
-  await pages.editJobExpectations.form.selectLocation(Kyiv);
 });

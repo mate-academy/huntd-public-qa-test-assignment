@@ -29,6 +29,7 @@ export default defineConfig({
     trace: 'retain-on-failure',
     video: 'retain-on-failure',
     testIdAttribute: 'id',
+    ignoreHTTPSErrors: true,
   },
 
   /* Configure projects for major browsers */

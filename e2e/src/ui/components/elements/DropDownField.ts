@@ -16,7 +16,7 @@ export class DropDownField extends BaseComponent {
 
   async selectOption(option: string): Promise<void> {
     await test.step(`Click on the required option ${option}`, async () => {
-      await this.selectDropdownOption.filter({ hasText: option }).first().click();
+      await this.selectDropdownOption.filter({ hasText: option }).last().click();
     });
   }
 

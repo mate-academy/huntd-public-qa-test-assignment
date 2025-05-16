@@ -6,10 +6,10 @@ import { expect, test } from '@tests/_fixtures/fixtures';
 export class ChooseProfilePage extends BasePage {
   url: string;
 
-  private readonly candidateLink = this.page.getByRole('link').filter({ hasText: 'Candidate' });
+  private readonly candidateLink = this.page.getByRole('link', { name: 'Candidate I\'m looking for a' })
 
 
-  private readonly recruiterLink = this.page.getByRole('link').filter({ hasText: 'Recruiter' });
+  private readonly recruiterLink = this.page.getByRole('link', { name: 'Recruiter I’m looking for' });
 
   constructor(page: Page) {
     super(page);
