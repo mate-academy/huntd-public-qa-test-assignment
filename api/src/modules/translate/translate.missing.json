@@ -332,32 +332,8 @@
   {
     "language": "en",
     "namespace": "profile",
-    "code": "fetch",
-    "value": "fetch"
-  },
-  {
-    "language": "en",
-    "namespace": "profile",
     "code": "recruiter_profile_companyinfo_tab",
     "value": "recruiter_profile_companyinfo_tab"
-  },
-  {
-    "language": "en",
-    "namespace": "profile",
-    "code": "reload",
-    "value": "reload"
-  },
-  {
-    "language": "en",
-    "namespace": "vacancy",
-    "code": "web3_top_companies",
-    "value": "web3_top_companies"
-  },
-  {
-    "language": "en",
-    "namespace": "validations",
-    "code": "Email is already taken",
-    "value": "Email is already taken"
   },
   {
     "language": "en",
