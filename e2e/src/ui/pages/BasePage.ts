@@ -34,10 +34,14 @@ export abstract class BasePage {
 
 
   async goto(url?: string): Promise<void> {
-    await test.step(`Go to ${this.pageName} page`, async () => {
-      await this.page.goto(url || this.url);
+  await test.step(`Go to ${this.pageName} page`, async () => {
+    await this.page.goto(url || this.url, {
+      waitUntil: 'networkidle', 
+      timeout: 60000,           
     });
-  }
+  });
+}
+
 
   async visit(url?: string): Promise<void> {
     await test.step(`Visit ${this.pageName} page`, async () => {

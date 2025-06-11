@@ -12,7 +12,7 @@ export function parseTestTreeHierarchy(fileName: string, logger: Logger): string
     capitalize(camelCaseToPhrase(attribute)),
   );
 
-  if (attributes[2].includes('.spec.js')) {
+  if (attributes[2] && attributes[2].includes('.spec.js')) {
     attributes = attributes.slice(0, 2);
   }
 

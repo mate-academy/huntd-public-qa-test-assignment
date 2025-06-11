@@ -1,0 +1,55 @@
+[33mea1f907[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/addTests[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/feature/my-feature[m[33m, [m[1;31morigin/feature/addTests[m[33m, [m[1;31morigin/add-e2e-tests[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m, [m[1;32mfeature/my-task[m[33m, [m[1;32mfeature/my-feature[m[33m, [m[1;32madd-e2e-tests[m[33m)[m Merge pull request #2 from mate-academy/e2e_improvements
+[33mdac5794[m[33m ([m[1;31morigin/e2e_improvements[m[33m)[m Rollback lock file
+[33me322b19[m Rollback translates
+[33m8263095[m Added fixes for e2e local run.
+[33m77a37e1[m Merge branch 'mate-academy:main' into main
+[33m0a5de8f[m Merge pull request #42 from mate-academy/update-certificates
+[33m44dc570[m update local certificates
+[33m04d2367[m Merge pull request #1 from mate-academy/e2e_test_project
+[33m108996d[m[33m ([m[1;31morigin/e2e_test_project[m[33m)[m Fixed formatting.
+[33mee7629e[m Removed only.
+[33m34474b2[m Improved methods.
+[33m1c345e7[m Added e2e tests and framework.
+[33m418fcce[m Test commit 2
+[33m5cd1b14[m Test commit
+[33m1369019[m Merge pull request #41 from mate-academy/revert-40-added_e2e_project
+[33m6ed5955[m Revert "Added e2e project"
+[33m2272251[m Merge pull request #40 from mate-academy/added_e2e_project
+[33m27e87ff[m Added e2e setup.
+[33m7639bea[m Merge pull request #39 from mate-academy/inna-ianko-patch-1
+[33m6f6dc70[m Updated docker compose command.
+[33m97795b3[m Update Makefile
+[33m781397b[m Merge pull request #19 from mate-academy/update-docs
+[33m6e47566[m remove windows hosts file mentioning
+[33me145af9[m move /etc/hosts to macos section
+[33m6695929[m update nginx docs
+[33m30a0177[m update readme.md
+[33mbfd0f0d[m update setup
+[33m08b63ac[m Update localhost.key
+[33m807c3b9[m fixe certificates names
+[33maba5488[m update certificate
+[33m9439d07[m removed tokens
+[33m0c344b2[m fixed host
+[33mb1564ff[m Merge branch 'main' of github.com:mate-academy/huntd-public
+[33m7708355[m fixed db name
+[33mdc9a640[m Update README.md
+[33m6ae85bb[m Update README.md
+[33me866648[m Update README.md
+[33me305995[m Merge branch 'main' of github.com:mate-academy/huntd-public
+[33meec5a3a[m added npm token to .env.sample
+[33m44bbdf6[m Update README.md
+[33mc664e03[m Update README.md
+[33ma9b8965[m remove required location from candidate
+[33mfe80ac5[m fixed isUserAuthenticated
+[33mf484169[m Merge branch 'main' of github.com:mate-academy/huntd-public
+[33mb1b2f4c[m fixed authUser
+[33m71a8b5e[m Update README.md
+[33m45f5ee7[m Update README.md
+[33m67dbdf9[m Update README.md
+[33m8b3aa09[m Update README.md
+[33m168f7a1[m Update README.md
+[33md3dc636[m Delete contributing.md
+[33m1f1a63e[m Update Makefile
+[33m4f8b770[m Update README.md
+[33m46282af[m Update README.md
+[33mdd27f2c[m added public huntd version

@@ -20,7 +20,7 @@ module.exports = {
   extends: [
     'airbnb/base',
     'plugin:@typescript-eslint/recommended',
-    '@mate-academy/eslint-config-internal',
+    //'@mate-academy/eslint-config-internal',
   ],
   plugins: [
     '@typescript-eslint',
