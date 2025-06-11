@@ -3,7 +3,7 @@ import { Logger, LogLevel } from '@/common/logger/Logger';
 import * as allure from 'allure-js-commons';
 import { parseTestTreeHierarchy } from '../../src/common/helpers/allureHelpers';
 import { ApiClientPlaywright } from "@/api/ApiClientPlaywright";
-import { AuthGqlAPI } from "@/api/graphql/AuthGqlAPI";
+import { AuthGqlAPI } from "@/api/graphql/operations/AuthGqlAPI";
 
 export const test = base.extend<{
   infoTestLog: string;
