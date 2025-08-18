@@ -17,8 +17,7 @@ Anonymous job search in IT(public version).
     ```bash
     npm install # in root, ./frontend, ./api, ./cms
     ```
-5. Add certificates to trusted
-  - Check [Nginx Readme](./nginx/README.md)
+5. Add certificates to trusted. Use steps from corresponding section in [Nginx Readme](./nginx/README.md).
 
 ## Run project
 
