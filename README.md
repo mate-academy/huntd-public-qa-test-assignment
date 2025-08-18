@@ -10,18 +10,29 @@ Anonymous job search in IT(public version).
     ```bash
    git clone git@github.com:mate-academy/huntd-public-qa-test-assignment.git
    ```
-3. Setup local `.env` file
-  - Run `make init` to copy `.env.sample` -> `.env`
-  - Insert on the 4th line the NPM_TOKEN you were given
+3. Setup local `.env` file:
+
+   3.1. Run `make init` to copy `.env.sample` -> `.env`
+   3.2. Insert on the 4th line the NPM_TOKEN you were given
+
+
 4. Install dependencies (node modules) for primary services locally(make sure correct node version is used, check .nvmrc file):
     ```bash
-    npm install # in root, ./frontend, ./api, ./cms
+    npm install --legacy-peer-deps # run the same command in root, ./frontend, ./api, ./cms folders
     ```
 5. Add host `local.huntd.tech` to `/etc/hosts`. Use steps from corresponding section in [Nginx Readme](./nginx/README.md).
 
-6. Add certificates to trusted. Use steps from corresponding section in [Nginx Readme](./nginx/README.md).
+6. Run the project using
+    ```bash
+    make up
+    ```
+    After project has started up it should be accessible at `https://local.huntd.tech`
 
-## Run project
+
+7. Add certificates to trusted. Use steps from corresponding section in [Nginx Readme](./nginx/README.md).
+
+
+## Project details
 
 To run the project run following command in the root directory(INSERT NPM TOKEN INTO MAKEFILE BEFORE RUNNING IT):
 ```bash
