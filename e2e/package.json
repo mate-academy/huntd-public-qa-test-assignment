@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "pw:install:browsers": "npx playwright install --with-deps chromium",
-    "pw:run:local-setup": "ENV_TYPE=local DB_SETUP=true npx playwright test --config ./config/playwright.config.ts --project=setup",
     "pw:run:local": "ENV_TYPE=local npx playwright test --config ./config/playwright.config.ts --project=chromium",
     "pw:run:local-open": "ENV_TYPE=local npx playwright test --config ./config/playwright.config.ts --ui",
     "lint:ci:json": "eslint . --ext .ts,.js --output-file eslint_report.json --format json",
