@@ -57,12 +57,6 @@ Navigate to the `./e2e` folder and run:
 npm run pw:run:local-open
 ```
 
-### 3.3 Start playwright Debug
-
-```zsh
-npm run pw:run:local-open-debug
-```
-
 ## 4. Local Allure report
 
 Please note this command require Allure Commandline to be installed previously.
